@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root {
+	--main-color: #54ea66;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+section:not(.top-area) {
+	padding: 80px 0;
+}
+
+ul.navbar-nav li a:not(.active) {
+	color: #fff !important;
+}
+
+li.nav-item.current .nav-link {
+	color: var(--main-color) !important;
+}
+
+nav {
+	margin-top: 20px;
+}
+
+img {
+	width: 100%;
+}
+span.logo-color{
+	color: var(--main-color);
+}
+.section-title h2 {
+	text-align: center;
+	margin-bottom: 80px;
+	position: relative;
+} 
+.section-title h2:after {
+	content: "";
+	top: 38px;
+	left: 50%;
+	position: absolute;
+	background: #54ea66;
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+}
+
+.section-title h2::before {
+	content: '';
+	top: 43px;
+	position: absolute;
+	width: 110px;
+	height: 2px;
+	background: #54ea66;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+} 
+/* preloader */
+
+.preloader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #363333;
+}
+.preloader ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+}
+.preloader ul li {
+    background: var(--main-color);
+    display: inline-block;
+    width: 5px;
+    height: 35px;
+    margin: 0 5px;
+	animation: load 1s infinite;
+	transition: all .6s;
+}
+@keyframes load {
+	0%{
+		transform: scaleY(1);
+	}
+	25%{
+		transform: scaleY(1);
+	
+	}
+	50%{
+		transform: scaleY(1);
+	}
+	75%{
+		transform: scaleY(1);
+	}
+	100%{
+		transform: scaleY(2);
+	}
+}
+.preloader ul li:nth-child(1){
+	animation-delay: .1s;
+}
+.preloader ul li:nth-child(2){
+	animation-delay: .2s;
+}
+.preloader ul li:nth-child(3){
+	animation-delay: .3s;
+}
+.preloader ul li:nth-child(4){
+	animation-delay: .4s;
+}
+.preloader ul li:nth-child(5){
+	animation-delay: .5s;
+}
+/* Top area CSS Start here */
+
+.fixed-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-top: 0px;
+	background: #131313;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	z-index: 36;
+	transition: all .6s;
+	border-bottom: 2px solid var(--main-color);
+}
+
+.navbar-light .navbar-toggler {
+	color: #fff;
+	border-color: rgba(0, 0, 0, .1);
+	background: #fff;
+}
+
+ul#nav a.nav-link:hover {
+	color: var(--main-color) !important;
+}
+
+header#header:after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(0 0 0 / 63%);
+	z-index: -1;
+}
+
+header#header {
+	background: url(../images/nasirahmed.jpeg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	border-bottom: 2px solid var(--main-color);
+	padding-bottom: 12px;
+	background-attachment: fixed;
+}
+
+
+/* Cursor */
+
+.typed-cursor {
+	color: var(--main-color);
+}
+
+p.follow {
+	color: #fff;
+	font-size: 16px;
+	position: relative;
+}
+
+p.follow::after {
+	position: absolute;
+	content: '';
+	top: 12px;
+	left: 87px;
+	width: 78px;
+	height: 1px;
+	background: var(--main-color);
+}
+
+.header-content h1 {
+	padding-top: 150px;
+	padding-bottom: 30px;
+	color: #fff;
+	font-size: 70px;
+	letter-spacing: 6px;
+}
+
+.header-content h2 {
+	padding-bottom: 18px;
+	color: #fff;
+}
+
+a.hire-btn {
+	background: var(--main-color);
+	padding: 10px 25px;
+	transition: all .6s;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+a.hire-btn:hover {
+	color: white;
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+.social-top {
+	position: relative;
+}
+
+span.fb {
+	color: #fff;
+	position: absolute;
+	bottom: 9px;
+	left: -93px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+span.tt {
+	color: #fff;
+	position: absolute;
+	bottom: -36px;
+	left: 0px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+span.in {
+	color: #fff;
+	position: absolute;
+	bottom: -36px;
+	left: 0px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+span.stack {
+	color: #fff;
+	position: absolute;
+	bottom: -50px;
+	left: 0px;
+	opacity: 0;
+	visibility: hidden;
+	width: 50px;
+}
+
+.social-top a.facebook:hover .fb,
+.social-top a.twitter:hover .tt,
+.social-top a.lin:hover .in,
+.social-top a.stack-o:hover .stack {
+	opacity: 1;
+	visibility: visible;
+}
+
+.social-top a {
+	color: #fff;
+	padding: 9px 16px;
+	margin-right: 20px;
+	background: var(--main-color);
+	border-radius: 50%;
+	display: inline-block;
+	transition: all .6s;
+	margin-top: 20px;
+}
+
+.social-top a:hover {
+	background: transparent;
+	transform: rotate(360deg);
+}
+
+.header-content {
+	padding-bottom: 65px;
+	margin-left: 22px;
+}
+
+
+/* Top area end here */
+
+
+/* about section css start here */
+
+.about-img {
+	margin-top: 75px;
+	position: relative;
+	cursor: pointer;
+}
+
+.about-img img {
+	filter: grayscale(1);
+	transition: all .6s;
+}
+
+.about-img img:hover {
+	filter: grayscale(0);
+}
+
+.about-img::before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	right: -47px;
+	width: 420px;
+	transform: translate3d(-18px, -20px, 27px);
+	border: 2px solid var(--main-color);
+	height: 660px;
+	z-index: -1;
+	border-radius: 6px;
+}
+
+.about-content {
+	margin-top: 80px;
+}
+
+.about-content h5 {
+	margin-bottom: 0;
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+.about-content h6 {
+	color: #afafafcc;
+	font-weight: 300;
+	padding-bottom: 10px;
+}
+
+.about-content p {
+	line-height: 35px;
+	/* margin-top: 16px; */
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.about-content h5.thx {
+	position: relative;
+}
+
+.about-content h5.thx:before {
+	content: '';
+	position: absolute;
+	top: 14px;
+	left: 76px;
+	background: var(--main-color);
+	width: 15%;
+	height: 1px;
+}
+
+.about-content img.sign {
+	width: 150px;
+	transform: rotate(59deg);
+	position: relative;
+	top: -35px;
+	left: 15px;
+}
+
+
+/* about section css end here */
+
+
+/* Servicers section css start here */
+
+section#services {
+	background: #F1F5F8;
+}
+
+
+.single-service-box {
+	background: #fff;
+	padding: 52px 19px;
+	text-align: center;
+	font-weight: 300;
+	border-radius: 5px;
+	position: relative;
+	transition: all .6s;
+	margin-top: 40px;
+}
+
+.single-service-box:hover {
+	background: var(--main-color);
+}
+
+.single-service-box i {
+	font-size: 43px;
+	background: var(--main-color);
+	padding: 20px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	border: 7px solid #fff;
+	transform: translate(-50%, -50%);
+}
+
+.single-service-box:hover i {
+	background: #fff;
+	color: black;
+	border: 7px solid var(--main-color);
+}
+
+.single-service-box h4 {
+	margin: 20px 0;
+}
+
+.single-service-box:hover h4 {
+	color: #fff;
+}
+
+.single-service-box p {
+	color: black;
+}
+
+.single-service-box:hover p {
+	color: #fff;
+}
+
+
+/* Servicers section css end here */
+
+
+
+
+
+
+/* Skills Section start here */
+
+.skills-bar .bar {
+	margin: 40px 0;
+}
+
+.skills-bar .bar:first-child {
+	margin-top: 0;
+}
+
+.skills-bar .bar .info span {
+	font-size: 17px;
+	font-weight: 500;
+	opacity: 0;
+	animation: showtxt1 .5s 1s linear forwards;
+}
+
+@keyframes showtxt1 {
+	100% {
+		opacity: 1;
+	}
+}
+
+.skills-bar .bar .progress-line {
+	position: relative;
+	height: 10px;
+	width: 100%;
+	background: #f0f0f0;
+	border-radius: 7px;
+	transform: scaleX(0);
+	transform-origin: left;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, .05), 0px 1px 1px rgba(0, 0, 0, .05);
+	animation: animate 1s 1s cubic-bezier(1, 1, 0.5, 1) forwards
+}
+
+.bar .progress-line span {
+	height: 100%;
+	width: 80%;
+	position: absolute;
+	background: var(--main-color);
+	border-radius: 7px;
+	animation: animate 1s 1s cubic-bezier(1, 1, 0.5, 1) forwards
+}
+
+@keyframes animate {
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+.bar .progress-line span:before {
+	content: '';
+	position: absolute;
+	height: 0;
+	width: 0;
+	right: 0;
+	top: -10px;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color: #000;
+	opacity: 0;
+	animation: showtxt .5s 1.5s linear forwards;
+}
+
+.bar .progress-line span::after {
+	position: absolute;
+	right: 0;
+	top: -28px;
+	color: #fff;
+	background: #000;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 1px 8px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showtxt .5s 1.5s linear forwards;
+}
+
+@keyframes showtxt {
+	100% {
+		opacity: 1;
+	}
+}
+
+.progress-line.html span {
+	width: 85%;
+}
+
+.progress-line.css span {
+	width: 75%;
+}
+
+.progress-line.js span {
+	width: 70%;
+}
+
+.progress-line.jquery span {
+	width: 80%;
+}
+
+.progress-line.bootstrap span {
+	width: 80%;
+}
+
+.progress-line.wp span {
+	width: 85%;
+}
+
+.progress-line.html span::after {
+	content: '85%';
+}
+
+.progress-line.css span::after {
+	content: '65%';
+}
+
+.progress-line.js span::after {
+	content: '70%';
+}
+
+.progress-line.jquery span::after {
+	content: '80%';
+}
+
+.progress-line.bootstrap span::after {
+	content: '80%';
+}
+
+.progress-line.wp span::after {
+	content: '85%';
+}
+
+
+/* Skills Section end here */
+
+/* projects section css start here */
+
+section#projects {
+	background: #F1F5F8;
+}
+
+
+.single-img {
+	box-shadow: 4px 2px 11px rgb(0 0 0 / 30%);
+	cursor: pointer;
+	transition: all .6s;
+	margin-top: 45px;
+}
+
+.single-img:hover {
+	box-shadow: none;
+	border: 1px solid var(--main-color);
+}
+
+
+/* projects section css end here */
+
+
+/* scroll up css start */
+
+.scroll-up {
+	font-size: 1.25rem;
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	background: var(--main-color);
+	width: 2rem;
+	height: 2rem;
+	display: grid;
+	place-items: center;
+	border-radius: 5px;
+	color: #fff;
+	animation: bounce 2s ease-in-out infinite;
+	visibility: hidden;
+	z-index: -100;
+	transition: all .6s;
+}
+
+.show-link {
+	visibility: visible;
+	z-index: 100;
+}
+
+.scroll-up:hover {
+	color: #333;
+	background: transparent;
+	border: 1px solid #333;
+}
+
+@keyframes bounce {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/* Scroll Up css end */
+
+/* Contact section start here */
+
+section#contact {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+ 
+input {
+	margin-bottom: 55px;
+}
+
+input:focus::placeholder {
+	transform: translateY(-20px);
+}
+
+input,
+textarea {
+	border: none;
+	border-bottom: 2px solid var(--main-color);
+	outline: none;
+	margin: 2rem 0;
+	padding: 1.3rem 0;
+	font-size: 0.85rem;
+}
+
+::placeholder {
+	color: var(--main-color);
+}
+
+input[type="text"] {
+	width: 47%;
+	margin-right: 10px;
+}
+
+input[type="email"] {
+	width: 97%;
+}
+
+textarea {
+	width: 97%;
+}
+button.send-btn {
+    background: var(--main-color);
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+	transition: all .6s;
+}
+button.send-btn:hover {
+    background: transparent;
+    border: 1px solid var(--main-color);
+    color: black;
+}
+.contact-info {
+	margin-top: 53px;
+	margin-left: 150px;
+}
+
+.contact-single:not(:last-child) {
+	margin-bottom: 85px;
+}
+
+.contact-single i {
+	margin-right: 13px;
+	color: var(--main-color);
+}
+
+.contact-single h1 {
+	color: var(--main-color);
+	margin-bottom: 13px;
+}
+
+.contact-single h6 a {
+	color: black;
+	user-select: none;
+}
+
+.map {
+	margin-top: 100px;
+}
+
+
+/* Contact section end here */
+
+
+/* Footer section Start Here */
+
+footer#footer {
+	background: #000;
+	padding: 50px 0 5px 0;
+	margin-top: -7px;
+	border-top: 2px solid var(--main-color);
+}
+
+div.footer-top {
+	color: #333;
+	margin-bottom: 30px;
+}
+
+.social-footer a {
+	padding: 9px 16px;
+	transition: all .6s;
+	margin-bottom: 18px;
+	display: inline-block;
+	background: var(--main-color);
+	border-radius: 50%;
+	margin-right: 31px;
+	border: 1px solid var(--main-color);
+}
+.social-footer a:last-child {
+    margin-right: 0;
+}
+.social-footer a:hover {
+	color: #fff;
+	background: transparent;
+}
+
+.footer-bottom {
+	border-top: 1px solid var(--main-color);
+	background: #000;
+}
+
+footer#footer h6 {
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+	margin-top: 11px;
+}
+
+.place-card.place-card-large {
+	display: none ;
+}
+
+
+/* Footer section end Here*/
